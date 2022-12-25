@@ -2,11 +2,11 @@ itemState = new Array;
 itemState[0] = false;
 complete=0;
 currentItem = 1;
-unfinished = "m-2 flex flex-col items-center border-2 border-slate-400 p-1 hover:bg-slate-400 hover:text-white text-slate-500";
-finished = "m-2 flex flex-col items-center border-2 hover:border-slate-400 p-1 bg-slate-400 text-white hover:text-slate-500"
+unfinished = "m-2 flex flex-col items-center border-2 border-slate-400 p-1  text-slate-500";
+finished = "m-2 flex flex-col items-center border-2  p-1 bg-slate-400 text-white "
 function createNewTask(){
     console.log("new");
-    node = document.getElementById(0).cloneNode(true);
+    node = document.getElementById("template").cloneNode(true);
     node.setAttribute("id",currentItem);
     node.setAttribute("onclick","completeItem("+currentItem+")");
     itemState[currentItem] = false;
