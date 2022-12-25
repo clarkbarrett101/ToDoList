@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="todolist.js"></script>
+</head>
+<body class="flex flex-col items-center">
+    <div class="font-semibold text-xl text-slate-500 p-3" id="total">0/1</div>
+    <div hidden>
+    <button id="template" onclick="completeItem(0)" class="m-2 flex flex-col border-2 items-center border-slate-400 p-1 hover:bg-slate-400 hover:text-white text-slate-500">
+        <input type="text" placeholder="Enter Task Here" class="border-2 border-slate-400 text-slate-500 placeholder:text-center text-center">
+        Finished</button>
+    </div>
+    <div id="start">
+    <button id="0"  onclick="completeItem(0)" class="m-2 flex flex-col border-2 items-center border-slate-400 p-1 hover:bg-slate-400 hover:text-white text-slate-500">
+        <input type="text" placeholder="Enter Task Here" class="border-2 border-slate-400 text-slate-500 placeholder:text-center text-center">
+        Finished</button>
+    </div>
+    <button onclick="createNewTask()">
+    <img class="w-[100px] p-5" src="plus.png" ></img></button>
+</body>
